@@ -13,7 +13,7 @@ map.addControl(new mapboxgl.NavigationControl());
 
 // Add max zoom level
 var options = {
-  maxZoom: 10};
+  maxZoom: 18};
 
    const stores = {
      "type": "FeatureCollection",
@@ -150,7 +150,7 @@ var options = {
    function flyToStore(currentFeature) {
      map.flyTo({
        center: currentFeature.geometry.coordinates,
-       zoom: 15
+       zoom: 17.7
      });
    }
 
@@ -161,6 +161,6 @@ var options = {
 
      const popup = new mapboxgl.Popup({ closeOnClick: false })
        .setLngLat(currentFeature.geometry.coordinates)
-       .setHTML(`<h3>Sweetgreen</h3><h4>${currentFeature.properties.projectname}</h4>`)
+       .setHTML(`<h3><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>`)
        .addTo(map);
    }
