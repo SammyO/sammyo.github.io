@@ -38,6 +38,25 @@ var options = {
            "postalCode": "sdv",
            "state": "sdv",
            "projectname":"Sumting Club"
+         },
+            {
+         "type": "Feature",
+         "geometry": {
+           "type": "Point",
+           "coordinates": [
+             -77.049766,
+             38.900772
+           ]
+         },
+         "properties": {
+           "phoneFormatted": "(202) 507-8357",
+           "phone": "2025078357",
+           "address": "2221 I St NW",
+           "city": "Washington DC",
+           "country": "United States",
+           "crossStreet": "at 22nd St NW",
+           "postalCode": "20037",
+           "state": "D.C."
          }
        }
      ]
