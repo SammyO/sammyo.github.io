@@ -1,5 +1,4 @@
-
-    mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtbXlvc3VtdGluZyIsImEiOiJja3llbHd2c2YwdDNuMnZxaG50cGlzNjk5In0.9CFGWGiyXWZxzon6ENAYeA';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtbXlvc3VtdGluZyIsImEiOiJja3llbHd2c2YwdDNuMnZxaG50cGlzNjk5In0.9CFGWGiyXWZxzon6ENAYeA';
 
     const map = new mapboxgl.Map({
       container: 'map',
@@ -7,11 +6,6 @@
       center: [0.0, 0.0],
       zoom: 1,
       scrollZoom: false
-        
-};
-
-
-mapObject = L.mapbox.map('mapDiv', undefined, options);
   });
   const stores = {
     "type": "FeatureCollection",
