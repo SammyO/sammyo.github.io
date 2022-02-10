@@ -3,7 +3,7 @@
 
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/light-v10',
+      style: 'mapbox://styles/sumting/ckzgwchr2000116lcvusqd79j',
       center: [-77.034084, 38.909671],
       zoom: 13,
       scrollZoom: false
