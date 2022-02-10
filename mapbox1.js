@@ -4,10 +4,14 @@
      const map = new mapboxgl.Map({
        container: 'map',
        style: 'mapbox://styles/mapbox/light-v10',
-       center: [-77.034084, 38.909671],
-       zoom: 13,
+       center: [0.0, 0.0],
+       zoom: 1,
        scrollZoom: false
    });
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
    const stores = {
      "type": "FeatureCollection",
      "features": [
