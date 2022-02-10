@@ -19,23 +19,23 @@ var options = {
      "type": "FeatureCollection",
      "features": [
        {
-          "type": "Feature",
+         "type": "Feature",
          "geometry": {
            "type": "Point",
            "coordinates": [
-             52.353542,
-             4.919649
+             52.353529,
+             4.919700
            ]
          },
          "properties": {
-           "phoneFormatted": "(00316) 15005286",
-           "phone": "2023379338",
-           "address": "3333 M St NW",
-           "city": "Washington DC",
-           "country": "United States",
-           "crossStreet": "at 34th St NW",
-           "postalCode": "20007",
-           "state": "D.C."
+           "phoneFormatted": "sdv",
+           "phone": "202387933e8",
+           "address": "sdfecticut Ave NW",
+           "city": "dsvvs",
+           "country": "sdv",
+           "crossStreet": "sdv",
+           "postalCode": "sdv",
+           "state": "sdv"
          }
        },
        {
