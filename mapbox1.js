@@ -10,12 +10,6 @@
         
 };
 
-// Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
-
-// Add max zoom level
-var options = {
-  maxZoom: 13};
 
 mapObject = L.mapbox.map('mapDiv', undefined, options);
   });
