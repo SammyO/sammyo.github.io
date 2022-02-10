@@ -42,14 +42,8 @@ var options = {
            ]
          },
          "properties": {
-           "phoneFormatted": "(202) 507-8357",
-           "phone": "2025078357",
-           "address": "2221 I St NW",
-           "city": "Washington DC",
-           "country": "United States",
-           "crossStreet": "at 22nd St NW",
-           "postalCode": "20037",
-           "state": "D.C."
+           "projectname":"Reefsystems",
+           "projectpage": "sdv",
          }
        }
      ]
