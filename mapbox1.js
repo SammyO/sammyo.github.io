@@ -29,15 +29,8 @@ var options = {
            ]
          },
          "properties": {
-           "phoneFormatted": "sdv",
-           "phone": "202387933e8",
-           "address": "sdfecticut Ave NW",
-           "city": "dsvvs",
-           "country": "sdv",
-           "crossStreet": "sdv",
-           "postalCode": "sdv",
-           "state": "sdv",
-           "projectname":"Sumting Club"
+           "projectname":"Sumting Club",
+           "projectpage": "sdv",
          },
             {
          "type": "Feature",
