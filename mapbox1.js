@@ -5,8 +5,14 @@
       container: 'map',
       style: 'mapbox://styles/sumting/ckzgwchr2000116lcvusqd79j',
       center: [0.0, 0.0],
-      zoom: 1,
+      zoom: 0,
       scrollZoom: false
+        
+};
+var options = {
+  maxZoom: 13
+};
+mapObject = L.mapbox.map('mapDiv', undefined, options);
   });
   const stores = {
     "type": "FeatureCollection",
