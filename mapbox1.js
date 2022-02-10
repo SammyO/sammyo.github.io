@@ -36,8 +36,6 @@ var options = {
            "crossStreet": "at 34th St NW",
            "postalCode": "20007",
            "state": "D.C."
-           "productname": "Sumting Club"
-           "productpage": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio"
          }
        },
        {
