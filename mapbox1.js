@@ -19,23 +19,25 @@ var options = {
      "type": "FeatureCollection",
      "features": [
        {
-         "type": "Feature",
+          "type": "Feature",
          "geometry": {
            "type": "Point",
            "coordinates": [
-             -77.034084142948,
-             38.909671288923
+             52.353542,
+             4.919649
            ]
          },
          "properties": {
-           "phoneFormatted": "(202) 234-7336",
-           "phone": "2022347336",
-           "address": "1471 P St NW",
+           "phoneFormatted": "(00316) 15005286",
+           "phone": "2023379338",
+           "address": "3333 M St NW",
            "city": "Washington DC",
            "country": "United States",
-           "crossStreet": "at 15th St NW",
-           "postalCode": "20005",
+           "crossStreet": "at 34th St NW",
+           "postalCode": "20007",
            "state": "D.C."
+           "productname": "Sumting Club"
+           "productpage": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio"
          }
        },
        {
