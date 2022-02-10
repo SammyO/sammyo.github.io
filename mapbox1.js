@@ -55,45 +55,56 @@ var options = {
    });
    map.on('load', () => {
      /* Add the data to your map as a layer */
-     map.addLayer({
-       id: 'locations',
-       type: 'circle',
-       /* Add a GeoJSON source containing place coordinates and information. */
-       source: {
-         type: 'geojson',
-         data: stores
-       }
+     map.addSource('places', {
+     'type': 'geojson',
+     'data': stores
      });
+     addMarkers();
      buildLocationList(stores);
    });
 
-   map.on('click', (event) => {
-     /* Determine if a feature in the "locations" layer exists at that point. */
-     const features = map.queryRenderedFeatures(event.point, {
-       layers: ['locations']
-     });
+     function addMarkers() {
+          /* For each feature in the GeoJSON object above: */
+          for (const marker of stores.features) {
+               /* Create a div element for the marker. */
+               const el = document.createElement('div');
+               /* Assign a unique `id` to the marker. */
+               el.id = `marker-${marker.properties.id}`;
+               /* Assign the `marker` class to each marker for styling. */
+               el.className = 'marker';
 
-     /* If it does not exist, return */
-     if (!features.length) return;
-
-     const clickedPoint = features[0];
-
-     /* Fly to the point */
-     flyToStore(clickedPoint);
-
-     /* Close all other popups and display popup for clicked store */
-     createPopUp(clickedPoint);
-
-     /* Highlight listing in sidebar (and remove highlight for all other listings) */
-     const activeItem = document.getElementsByClassName('active');
-     if (activeItem[0]) {
-       activeItem[0].classList.remove('active');
+               /**
+               * Create a marker using the div element
+               * defined above and add it to the map.
+               **/
+               new mapboxgl.Marker(el, { offset: [0, -23] })
+                .setLngLat(marker.geometry.coordinates)
+                .addTo(map);
+               /**
+               * Listen to the element and when it is clicked, do three things:
+               * 1. Fly to the point
+               * 2. Close all other popups and display popup for clicked store
+               * 3. Highlight listing in sidebar (and remove highlight for all other listings)
+               **/
+               el.addEventListener('click', (e) => {
+                    /* Fly to the point */
+                    flyToStore(marker);
+                    /* Close all other popups and display popup for clicked store */
+                    createPopUp(marker);
+                    /* Highlight listing in sidebar */
+                    const activeItem = document.getElementsByClassName('active');
+                    e.stopPropagation();
+                    if (activeItem[0]) {
+                         activeItem[0].classList.remove('active');
+                    }
+                    const listing = document.getElementById(
+                         `listing-${marker.properties.id}`
+                    );
+                    listing.classList.add('active');
+               });
+          }
      }
-     const listing = document.getElementById(
-       `listing-${clickedPoint.properties.id}`
-     );
-     listing.classList.add('active');
-   });
+
 
 
    function buildLocationList(stores) {
