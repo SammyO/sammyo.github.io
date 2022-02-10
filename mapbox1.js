@@ -167,13 +167,11 @@ var options = {
      if (popUps[0]) popUps[0].remove();
 
      const popup = new mapboxgl.Popup({ closeOnClick: false })
-
-        
-     document.getElementsByClassName('mapboxgl-popup').style.background='url(https://amymhaddad.s3.amazonaws.com/morocco-blue.png)';
-
   
      popup.setLngLat(currentFeature.geometry.coordinates)
        .setHTML(`<h3><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>`)
        .addTo(map);
+        
+     document.getElementsByClassName('mapboxgl-popup')[0].style.background='url(https://amymhaddad.s3.amazonaws.com/morocco-blue.png)';
         
    }
