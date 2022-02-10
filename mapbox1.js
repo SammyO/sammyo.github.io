@@ -29,7 +29,7 @@ var options = {
            ]
          },
          "properties": {
-           "projectlink": "sdv",
+           "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
            "projectname":"Sumting Club"
          }
        },
