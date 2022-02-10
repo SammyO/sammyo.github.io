@@ -169,9 +169,11 @@ var options = {
      const popup = new mapboxgl.Popup({ closeOnClick: false })
 
         
-     document.getElementsByClassName('mapboxgl-popup').style.backgroundImage=url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+    
      
      popup.setLngLat(currentFeature.geometry.coordinates)
        .setHTML(`<h3><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>`)
        .addTo(map);
+        
+     document.getElementsByClassName('mapboxgl-popup').style.backgroundImage=url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
    }
