@@ -12,6 +12,10 @@
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
+// Add max zoom level
+var options = {
+  maxZoom: 18};
+
    const stores = {
      "type": "FeatureCollection",
      "features": [
