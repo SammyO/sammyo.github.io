@@ -13,7 +13,7 @@ map.addControl(new mapboxgl.NavigationControl());
 
 // Add max zoom level
 var options = {
-  maxZoom: 18};
+  maxZoom: 10};
 
    const stores = {
      "type": "FeatureCollection",
