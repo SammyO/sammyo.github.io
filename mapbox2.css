@@ -93,13 +93,14 @@
       background: #00853e;
       border-radius: 0;
     }
+
     /* Marker tweaks */
     .mapboxgl-popup-close-button {
       display: none;
     }
 
     .mapboxgl-popup-content {
-      font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+      font: 400 17px/24px 'Alatsi', 'Helvetica Neue', sans-serif;
       padding: 0;
       width: 180px;
     }
