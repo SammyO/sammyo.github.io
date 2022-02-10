@@ -172,10 +172,10 @@ var options = {
        .setHTML(`<h3><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>`)
        .addTo(map);
         
-    console.log('${currentFeature.properties.projectimage}');
+    console.log(`${currentFeature.properties.projectimage}`);
 
     console.log("1");
 
-     document.getElementsByClassName('mapboxgl-popup-content')[0].style.background=`url('${currentFeature.properties.projectimage}')`;
+     document.getElementsByClassName('mapboxgl-popup-content')[0].style.backgroundImage=`url('${currentFeature.properties.projectimage}')`;
         
    }
