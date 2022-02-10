@@ -2,6 +2,11 @@
       box-sizing: border-box;
     }
 
+.leaflet-bottom, .leaflet-top {
+    z-index: 0 !important; // This is 1000 by default
+    position: absolute;
+    pointer-events: none;
+}
     body {
       color: #404040;
       font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
