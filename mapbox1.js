@@ -175,5 +175,5 @@ var options = {
        .setHTML(`<h3><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>`)
        .addTo(map);
         
-     document.getElementsByClassName('mapboxgl-popup').style.backgroundImage=url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+     document.getElementsByClassName('mapboxgl-popup').style.backgroundImage='url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png")';
    }
