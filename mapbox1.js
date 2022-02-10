@@ -36,7 +36,8 @@ var options = {
            "country": "sdv",
            "crossStreet": "sdv",
            "postalCode": "sdv",
-           "state": "sdv"
+           "state": "sdv",
+           "projectname":"Sumting Club"
          }
        },
        {
@@ -362,7 +363,7 @@ var options = {
 
      const popup = new mapboxgl.Popup({ closeOnClick: false })
        .setLngLat(currentFeature.geometry.coordinates)
-       .setHTML(`<h3>Sweetgreen</h3><h4>${currentFeature.properties.address}</h4>`)
+       .setHTML(`<h3>Sweetgreen</h3><h4>${currentFeature.properties.projectname}</h4>`)
        .addTo(map);
    }
      
