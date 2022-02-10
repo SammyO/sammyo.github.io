@@ -173,7 +173,9 @@ var options = {
        .addTo(map);
         
     console.log(${currentFeature.properties.projectimage});
-        
+
+    console.log("1");
+
      document.getElementsByClassName('mapboxgl-popup-content')[0].style.background=`url(${currentFeature.properties.projectimage})`;
         
    }
