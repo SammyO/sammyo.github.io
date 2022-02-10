@@ -23,8 +23,9 @@ var options = {
          "geometry": {
            "type": "Point",
            "coordinates": [
-             52.353529,
-             4.919700
+             4.919700,
+             52.353529
+             
            ]
          },
          "properties": {
