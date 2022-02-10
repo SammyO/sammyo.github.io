@@ -99,7 +99,20 @@
       border-radius: 0;
     }
 
-    /* Marker tweaks */
+   /* Marker tweaks */
+   .marker {
+      border: none;
+      cursor: pointer;
+      height: 56px;
+      width: 56px;
+      background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+   }
+   
+   .mapboxgl-popup {
+     padding-bottom: 50px;
+   }
+
+
     .mapboxgl-popup-close-button {
       display: none;
     }
