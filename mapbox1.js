@@ -30,7 +30,7 @@ var options = {
          },
          "properties": {
            "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
-           "projectimage": "https://en.wikipedia.org/wiki/File:Andr%C3%A9_Hazes(Cropped).jpg",
+           "projectimage": "https://d354cgj0llpu6u.cloudfront.net/roberto-sorin-RS0-h_pyByk-unsplash.jpg",
            "projectname":"Sumting Club"
          }
        },
