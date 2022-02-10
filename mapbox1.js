@@ -30,6 +30,7 @@ var options = {
          },
          "properties": {
            "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
+           "projectimage": "https://en.wikipedia.org/wiki/File:Andr%C3%A9_Hazes(Cropped).jpg",
            "projectname":"Sumting Club"
          }
        },
@@ -44,6 +45,7 @@ var options = {
          },
          "properties": {
           "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
+          "projectimage": "https://innovationorigins.com/app/uploads/2021/03/2020Blokkendam-304-2048x1367.jpg",
           "projectname":"Reefsystems"
          }
        }
@@ -165,7 +167,11 @@ var options = {
      if (popUps[0]) popUps[0].remove();
 
      const popup = new mapboxgl.Popup({ closeOnClick: false })
-       .setLngLat(currentFeature.geometry.coordinates)
+
+        
+     document.getElementsByClassName('mapboxgl-popup').style.backgroundImage=url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+     
+     popup.setLngLat(currentFeature.geometry.coordinates)
        .setHTML(`<h3><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>`)
        .addTo(map);
    }
