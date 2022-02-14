@@ -4,7 +4,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtbXlvc3VtdGluZyIsImEiOiJja3llbHd2c2YwdDNuM
        container: 'map',
        style: 'mapbox://styles/sumting/ckzgwchr2000116lcvusqd79j',
        center: [40.594, 14.447],
-       zoom: 0.8,
+       zoom: 1.5,
        scrollZoom: true
    });
 
@@ -30,7 +30,7 @@ var options = {
          },
          "properties": {
            "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
-           "projectimage": "https://d354cgj0llpu6u.cloudfront.net/roberto-sorin-RS0-h_pyByk-unsplash.jpg",
+           "projectimage": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef956c8c4afb9f5b0825_Group%20141-2.png",
            "projectname":"Sumting Club"
          }
        },
@@ -45,7 +45,7 @@ var options = {
          },
          "properties": {
           "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
-          "projectimage": "https://innovationorigins.com/app/uploads/2021/03/2020Blokkendam-304-2048x1367.jpg",
+          "projectimage": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef990cb36b1397e3f070_Frame-6.png",
           "projectname":"Reefsystems"
          }
        }
