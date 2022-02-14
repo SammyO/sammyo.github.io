@@ -41,21 +41,17 @@
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
  padding-bottom:11px;}
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
- padding-left:11px;}
+ padding-left:12px;}
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip{
- padding-right:11px;}
+ padding-right:12px;}
 
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip{
-  padding-left:11px;
-  padding-bottom:11px;}
+  padding-bottom:13px;}
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip{
-  padding-right:11px;
-  padding-bottom:11px;}
+  padding-bottom:13px;}
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip{
-  padding-left:11px;
   padding-top:11px;}
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip{
-  padding-right:11px;
   padding-top:11px;}
 
 
