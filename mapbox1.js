@@ -179,5 +179,5 @@ var options = {
     console.log("1");
 
      document.getElementsByClassName('mapboxgl-popup-content')[0].style.backgroundImage=`url('${currentFeature.properties.projectimage}')`;
-        
+     document.getElementsByClassName('marker')[0].style.backgroundImage=`url('${currentFeature.properties.projectillustration}')`;
    }
