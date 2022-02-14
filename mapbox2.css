@@ -19,6 +19,7 @@
       border-radius: 25px;
       background-color:white;
       background-size:cover;
+      margin-top:15px;
    }
    
    .mapboxgl-popup {
