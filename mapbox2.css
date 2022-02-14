@@ -81,11 +81,11 @@
       height: 25px;
       width: 25px;
       border-radius: 25px;
-      background-color: black;
+      background-color: white;
    }
    
    .mapboxgl-popup {
-     padding-bottom: 50px;
+     padding-bottom: 200px;
    }
 
 
