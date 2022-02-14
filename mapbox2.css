@@ -78,9 +78,9 @@
    .marker {
       border: none;
       cursor: pointer;
-      height: 25px;
-      width: 25px;
-      border-radius: 10px;
+      height: 35px;
+      width: 35px;
+      border-radius: 35px;
       background-color: white;
    }
    
