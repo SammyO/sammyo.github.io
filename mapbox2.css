@@ -1,125 +1,181 @@
- * {
-      box-sizing: border-box;
-    }
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtbXlvc3VtdGluZyIsImEiOiJja3llbHd2c2YwdDNuMnZxaG50cGlzNjk5In0.9CFGWGiyXWZxzon6ENAYeA';
 
-.leaflet-bottom, .leaflet-top {
-    z-index: 0 !important; // This is 1000 by default
-    position: absolute;
-    pointer-events: none;
-}
+     const map = new mapboxgl.Map({
+       container: 'map',
+       style: 'mapbox://styles/sumting/ckzgwchr2000116lcvusqd79j',
+       center: [40.594, 14.447],
+       zoom: 0.8,
+       scrollZoom: true
+   });
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
+// Add max zoom level
+var options = {
+  maxZoom: 15};
+
+   const stores = {
+     "type": "FeatureCollection",
+     "features": [
+       {
+         "type": "Feature",
+         "geometry": {
+           "type": "Point",
+           "coordinates": [
+             4.919700,
+             52.353529
+             
+           ]
+         },
+         "properties": {
+           "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
+           "projectimage": "https://d354cgj0llpu6u.cloudfront.net/roberto-sorin-RS0-h_pyByk-unsplash.jpg",
+           "projectname":"Sumting Club"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+           "type": "Point",
+           "coordinates": [
+             -77.049766,
+             38.900772
+           ]
+         },
+         "properties": {
+          "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
+          "projectimage": "https://innovationorigins.com/app/uploads/2021/03/2020Blokkendam-304-2048x1367.jpg",
+          "projectname":"Reefsystems"
+         }
+       }
+     ]
+   };
+   /* Assign a unique ID to each store */
+   stores.features.forEach(function (store, i) {
+     store.properties.id = i;
+   });
+   map.on('load', () => {
+     /* Add the data to your map as a layer */
+     map.addSource('places', {
+     'type': 'geojson',
+     'data': stores
+     });
+     addMarkers();
+     buildLocationList(stores);
+   });
+
+     function addMarkers() {
+          /* For each feature in the GeoJSON object above: */
+          for (const marker of stores.features) {
+               /* Create a div element for the marker. */
+               const el = document.createElement('div');
+               /* Assign a unique `id` to the marker. */
+               el.id = `marker-${marker.properties.id}`;
+               /* Assign the `marker` class to each marker for styling. */
+               el.className = 'marker';
+
+               /**
+               * Create a marker using the div element
+               * defined above and add it to the map.
+               **/
+               new mapboxgl.Marker(el, { offset: [0, -23] })
+                .setLngLat(marker.geometry.coordinates)
+                .addTo(map);
+               /**
+               * Listen to the element and when it is clicked, do three things:
+               * 1. Fly to the point
+               * 2. Close all other popups and display popup for clicked store
+               * 3. Highlight listing in sidebar (and remove highlight for all other listings)
+               **/
+               el.addEventListener('click', (e) => {
+                    /* Fly to the point */
+                    flyToStore(marker);
+                    /* Close all other popups and display popup for clicked store */
+                    createPopUp(marker);
+                    /* Highlight listing in sidebar */
+                    const activeItem = document.getElementsByClassName('active');
+                    e.stopPropagation();
+                    if (activeItem[0]) {
+                         activeItem[0].classList.remove('active');
+                    }
+                    const listing = document.getElementById(
+                         `listing-${marker.properties.id}`
+                    );
+                    listing.classList.add('active');
+               });
+          }
+     }
 
 
-    /* The page is split between map and sidebar - the sidebar gets 1/3, map
-    gets 2/3 of the page. You can adjust this to your personal liking. */
-    .sidebar {
-      position: absolute;
-      width: 0%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      overflow: hidden;
-      border-right: 1px solid rgba(0, 0, 0, 0.25);
-    }
 
-    .map {
-      position: absolute;
-      left: 0%;
-      width: 100%;
-      top: 0;
-      bottom: 0;
-    }
+   function buildLocationList(stores) {
+     for (const store of stores.features) {
+       /* Add a new listing section to the sidebar. */
+       const listings = document.getElementById('listings');
+       const listing = listings.appendChild(document.createElement('div'));
+       /* Assign a unique `id` to the listing. */
+       listing.id = `listing-${store.properties.id}`;
+       /* Assign the `item` class to each listing for styling. */
+       listing.className = 'item';
 
-    .listings {
-      height: 100%;
-      overflow: auto;
-      padding-bottom: 60px;
-    }
+       /* Add the link to the individual listing created above. */
+       const link = listing.appendChild(document.createElement('a'));
+       link.href = '#';
+       link.className = 'title';
+       link.id = `link-${store.properties.id}`;
+       link.innerHTML = `${store.properties.address}`;
 
-    .listings .item {
-      border-bottom: 1px solid #eee;
-      padding: 10px;
-      text-decoration: none;
-    }
+       /* Add details to the individual listing. */
+       const details = listing.appendChild(document.createElement('div'));
+       details.innerHTML = `${store.properties.city}`;
+       if (store.properties.phone) {
+         details.innerHTML += ` · ${store.properties.phoneFormatted}`;
+       }
+       if (store.properties.distance) {
+         const roundedDistance = Math.round(store.properties.distance * 100) / 100;
+         details.innerHTML += `<div><strong>${roundedDistance} miles away</strong></div>`;
+       }
 
-    .listings .item:last-child { border-bottom: none; }
 
-    .listings .item .title {
-      display: block;
-      color: #00853e;
-      font-weight: 700;
-    }
+       link.addEventListener('click', function () {
+         for (const feature of stores.features) {
+           if (this.id === `link-${feature.properties.id}`) {
+             flyToStore(feature);
+             createPopUp(feature);
+           }
+         }
+         const activeItem = document.getElementsByClassName('active');
+         if (activeItem[0]) {
+           activeItem[0].classList.remove('active');
+         }
+         this.parentNode.classList.add('active');
+       });
 
-    .listings .item .title small { font-weight: 400; }
-
-    .listings .item.active .title,
-    .listings .item .title:hover { color: #8cc63f; }
-
-    .listings .item.active {
-      background-color: #f8f8f8;
-    }
-
-    ::-webkit-scrollbar {
-      width: 3px;
-      height: 3px;
-      border-left: 0;
-      background: rgba(0, 0, 0, 0.1);
-    }
-
-    ::-webkit-scrollbar-track {
-      background: none;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #00853e;
-      border-radius: 0;
-    }
-
-   /* Marker tweaks */
-   .marker {
-      border: none;
-      cursor: pointer;
-      height: 25px;
-      width: 25px;
+     }
    }
-   
-   .mapboxgl-popup {
-     padding-bottom: 50px;
+   function flyToStore(currentFeature) {
+     map.flyTo({
+       center: currentFeature.geometry.coordinates,
+       zoom: 13
+     });
    }
 
+   function createPopUp(currentFeature) {
+     const popUps = document.getElementsByClassName('mapboxgl-popup');
+     /** Check if there is already a popup on the map and if so, remove it */
+     if (popUps[0]) popUps[0].remove();
 
-    .mapboxgl-popup-close-button {
-      display: none;
-    }
+     const popup = new mapboxgl.Popup({ closeOnClick: false })
+  
+     popup.setLngLat(currentFeature.geometry.coordinates)
+       .setHTML(`<h3><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>`)
+       .addTo(map);
+        
+    console.log(`${currentFeature.properties.projectimage}`);
 
-    .mapboxgl-popup-content {
-      font: 400 17px/24px 'Alatsi', 'Helvetica Neue', sans-serif;
-      padding: 0;
-      width: 180px;
-    }
+    console.log("1");
 
-    .mapboxgl-popup-content h3 {
-      color: #fff;
-      margin: 0;
-      padding: 10px;
-      border-radius: 3px 3px 0 0;
-      font-weight: 700;
-      margin-top: -15px;
-    }
-
-    .mapboxgl-popup-content h4 {
-      margin: 0;
-      padding: 10px;
-      font-weight: 400;
-    }
-
-    .mapboxgl-popup-content div {
-      padding: 10px;
-    }
-
-    .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
-      margin-top: 15px;
-    }
-
-    .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
-      border-bottom-color: #91c949;
-    }
+     document.getElementsByClassName('mapboxgl-popup-content')[0].style.backgroundImage=`url('${currentFeature.properties.projectimage}')`;
+        
+   }
