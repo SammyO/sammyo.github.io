@@ -25,7 +25,6 @@
      padding-bottom: 12px;
    }
 
-
     .mapboxgl-popup-close-button {
       display: none;
     }
@@ -43,17 +42,10 @@
       padding: 10px;
       border-radius: 3px 3px 0 0;
       font-weight: 700;
-      margin-top: -15px;
-    }
-
-    .mapboxgl-popup-content h4 {
-      margin: 0;
-      padding: 10px;
-      font-weight: 400;
     }
 
     .mapboxgl-popup-content div {
-      padding: 10px;
+      padding: 200px;
     }
 
     .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
@@ -61,5 +53,5 @@
     }
 
     .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
-      border-bottom-color: #91c949;
+      border-bottom-color: #FFF;
     }
