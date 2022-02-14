@@ -19,7 +19,7 @@
       border-radius: 25px;
       background-color:white;
       background-size:cover;
-      margin-top:15px;
+      margin-top:12px;
    }
    
    .mapboxgl-popup {
@@ -33,23 +33,7 @@
     .mapboxgl-popup-content {
       font: 400 17px/24px 'Alatsi', 'Helvetica Neue', sans-serif;
       padding: 0;
-      width: 250px;
+      width: auto;
       background-color:white;
-    }
-
-    .mapboxgl-popup-content h3 {
-      color: #fff;
-      margin: 0;
-      padding: 10px;
-      border-radius: 3px 3px 0 0;
-      font-weight: 700;
-    }
-
-    .mapboxgl-popup-content div {
-      padding: 0px;
-    }
-
-    .mapboxgl-popup-tip {
-      margin: 5px;
     }
 
