@@ -1,4 +1,4 @@
-    * {
+ * {
       box-sizing: border-box;
     }
 
@@ -80,12 +80,11 @@
       cursor: pointer;
       height: 25px;
       width: 25px;
-      border-radius: 25px;
-      background-color:white;
+      background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
    }
    
    .mapboxgl-popup {
-     padding-bottom: 200px;
+     padding-bottom: 50px;
    }
 
 
@@ -125,4 +124,3 @@
     .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
       border-bottom-color: #91c949;
     }
-
