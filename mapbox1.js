@@ -31,6 +31,7 @@ var options = {
          "properties": {
            "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
            "projectimage": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef956c8c4afb9f5b0825_Group%20141-2.png",
+           "projectcategoryillustration": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef956c8c4afb9f5b0825_Group%20141-2.png",
            "projectname":"Sumting Club"
          }
        },
@@ -46,6 +47,7 @@ var options = {
          "properties": {
           "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
           "projectimage": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef990cb36b1397e3f070_Frame-6.png",
+          "projectcategoryillustration": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef990cb36b1397e3f070_Frame-6.png",
           "projectname":"Reefsystems"
          }
        }
@@ -177,5 +179,6 @@ var options = {
     console.log("1");
 
      document.getElementsByClassName('mapboxgl-popup-content')[0].style.backgroundImage=`url('${currentFeature.properties.projectimage}')`;
+     document.getElementsByClassName('marker')[0].style.backgroundImage=`url('${currentFeature.properties.projectcategoryillustration}')`;
         
    }
