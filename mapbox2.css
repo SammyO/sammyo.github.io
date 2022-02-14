@@ -49,10 +49,7 @@
       padding: 0px;
     }
 
-    .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
-      margin-top: 25px;
-    }
-    .mapboxgl-popup-anchor-bottom > .mapboxgl-popup-content {
-      margin-bottom: 25px;
+    .mapboxgl-popup-tip {
+      margin: 5px;
     }
 
