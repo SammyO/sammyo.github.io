@@ -34,7 +34,7 @@
       font: 400 17px/24px 'Alatsi', 'Helvetica Neue', sans-serif;
       padding: 0;
       width: 250px;
-      background-size:cover;
+      background-color:white;
     }
 
     .mapboxgl-popup-content h3 {
