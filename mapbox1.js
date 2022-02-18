@@ -76,6 +76,8 @@ var options = {
                el.id = `marker-${marker.properties.id}`;
                /* Assign the `marker` class to each marker for styling. */
                el.className = 'marker';
+               /* Set the feature's image property as the custom marker image */
+               el.style.backgroundImage=`url('${marker.properties.projectmarker}')`;
 
                /**
                * Create a marker using the div element
@@ -109,53 +111,6 @@ var options = {
           }
      }
 
-
-
-   function buildLocationList(stores) {
-     for (const store of stores.features) {
-       /* Add a new listing section to the sidebar. */
-       const listings = document.getElementById('listings');
-       const listing = listings.appendChild(document.createElement('div'));
-       /* Assign a unique `id` to the listing. */
-       listing.id = `listing-${store.properties.id}`;
-       /* Assign the `item` class to each listing for styling. */
-       listing.className = 'item';
-
-       /* Add the link to the individual listing created above. */
-       const link = listing.appendChild(document.createElement('a'));
-       link.href = '#';
-       link.className = 'title';
-       link.id = `link-${store.properties.id}`;
-       link.innerHTML = `${store.properties.address}`;
-
-       /* Add details to the individual listing. */
-       const details = listing.appendChild(document.createElement('div'));
-       details.innerHTML = `${store.properties.city}`;
-       if (store.properties.phone) {
-         details.innerHTML += ` · ${store.properties.phoneFormatted}`;
-       }
-       if (store.properties.distance) {
-         const roundedDistance = Math.round(store.properties.distance * 100) / 100;
-         details.innerHTML += `<div><strong>${roundedDistance} miles away</strong></div>`;
-       }
-
-
-       link.addEventListener('click', function () {
-         for (const feature of stores.features) {
-           if (this.id === `link-${feature.properties.id}`) {
-             flyToStore(feature);
-             createPopUp(feature);
-           }
-         }
-         const activeItem = document.getElementsByClassName('active');
-         if (activeItem[0]) {
-           activeItem[0].classList.remove('active');
-         }
-         this.parentNode.classList.add('active');
-       });
-
-     }
-   }
    function flyToStore(currentFeature) {
      map.flyTo({
        center: currentFeature.geometry.coordinates,
@@ -171,13 +126,9 @@ var options = {
      const popup = new mapboxgl.Popup({ closeOnClick: false })
   
      popup.setLngLat(currentFeature.geometry.coordinates)
-       .setHTML(`<h3><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>`)
+       .setHTML(`
+        <h3><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>
+        <img src="${currentFeature.properties.projectimage}" class="custom-popup-image">
+       `)
        .addTo(map);
-        
-    console.log(`${currentFeature.properties.projectimage}`);
-
-    console.log("1");
-
-     document.getElementsByClassName('mapboxgl-popup-content')[0].style.backgroundImage=`url('${currentFeature.properties.projectimage}')`;
-     document.getElementsByClassName('marker')[0].style.backgroundImage=`url('${currentFeature.properties.projectmarker}')`;
    }
