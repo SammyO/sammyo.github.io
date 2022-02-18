@@ -31,7 +31,7 @@ var options = {
          "properties": {
            "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
            "projectimage": "https://d354cgj0llpu6u.cloudfront.net/roberto-sorin-RS0-h_pyByk-unsplash.jpg",
-           "projectmarker": "https://d354cgj0llpu6u.cloudfront.net/roberto-sorin-RS0-h_pyByk-unsplash.jpg",
+           "projectmarker": "https://upload.wikimedia.org/wikipedia/commons/0/07/Communication_icon_%28The_Noun_Project%29.svg",
            "projectname":"Sumting Club"
          }
        },
@@ -47,7 +47,7 @@ var options = {
          "properties": {
           "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
           "projectimage": "https://innovationorigins.com/app/uploads/2021/03/2020Blokkendam-304-2048x1367.jpg",
-          "projectmarker": "https://innovationorigins.com/app/uploads/2021/03/2020Blokkendam-304-2048x1367.jpg",
+          "projectmarker": "https://static.tildacdn.com/tild6138-3939-4631-b939-393665353063/Line_logo-1-1.svg",
           "projectname":"Reefsystems"
          }
        }
