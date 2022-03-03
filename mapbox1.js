@@ -48,7 +48,7 @@ var options = {
          "properties": {
           "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
           "projectimage": "https://innovationorigins.com/app/uploads/2021/03/2020Blokkendam-304-2048x1367.jpg",
-          "projectmarker": "https://static.tildacdn.com/tild6138-3939-4631-b939-393665353063/Line_logo-1-1.svg",
+          "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
           "projectname":"Reefsystems"
          }
        }
