@@ -112,7 +112,7 @@ var options = {
   
      popup.setLngLat(currentFeature.geometry.coordinates)
        .setHTML(`
-        <h3><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>
+        <h3 class="Project-Title-Map"><a href="${currentFeature.properties.projectlink}">${currentFeature.properties.projectname}</a></h3>
         <img src="${currentFeature.properties.projectimage}" class="custom-popup-image">
        `)
        .addTo(map);
