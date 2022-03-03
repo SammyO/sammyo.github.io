@@ -32,7 +32,7 @@ var options = {
          "properties": {
            "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
            "projectimage": "https://d354cgj0llpu6u.cloudfront.net/roberto-sorin-RS0-h_pyByk-unsplash.jpg",
-           "projectmarker": "https://upload.wikimedia.org/wikipedia/commons/0/07/Communication_icon_%28The_Noun_Project%29.svg",
+           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef956c8c4afb9f5b0825_Group%20141-2.png",
            "projectname":"Sumting Club"
          }
        },
