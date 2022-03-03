@@ -4,7 +4,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtbXlvc3VtdGluZyIsImEiOiJja3llbHd2c2YwdDNuM
        container: 'map',
        style: 'mapbox://styles/sumting/ckzgwchr2000116lcvusqd79j',
        center: [4.919700, 52.353529],
-       zoom: 0.70,
+       zoom: 8,
        scrollZoom: false,
        attributionControl: false
    });
