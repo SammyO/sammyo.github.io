@@ -34,13 +34,20 @@
     .mapboxgl-popup-close-button {
       display: none;
     }
+    .Project-Title-Map{
+     font:font: 400 17px/24px 'Alatsi', 'Inter', sans-serif;
+     padding:5px;
+     
 
     .mapboxgl-popup-content {
-      font: 400 17px/24px 'Alatsi', 'Helvetica Neue', sans-serif;
+      font: 400 17px/24px 'Alatsi', 'Inter', sans-serif;
       padding: 0;
       width: auto;
-      background-color:white;
+      background-color:#fdeae2;
     }
+.mapboxgl-popup-anchor-bottom{
+ background-color: #fdeae2}
+
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
  padding-top:11px;}
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
