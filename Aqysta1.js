@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtbXlvc3VtdGluZyIsImEiOiJja3llbHd2c2YwdDNuM
      const map = new mapboxgl.Map({
        container: 'map',
        style: 'mapbox://styles/sumting/ckzgwchr2000116lcvusqd79j',
-       center: [-4.649508, 57.850405],
+       center: [92.861524, 26.339692],
        zoom: 8,
        scrollZoom: false,
        attributionControl: false
@@ -24,8 +24,7 @@ var options = {
          "geometry": {
            "type": "Point",
            "coordinates": [
-             -4.649508,
-             57.850405
+             92.861524, 26.339692
              
            ]
          },
@@ -33,7 +32,7 @@ var options = {
            "projectlink": "https://www.sumting.org/product/restoring-aspen",
            "projectimage": "https://uploads-ssl.webflow.com/61bb086531e81a34127b71cf/6225ec401c6abe8441bdea8b_94f1dea7-2e11-4782-acdf-bbc44680ab8e_Beaver-2.jpg",
            "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
-           "projectname":"Restoring Aspen"
+           "projectname":"The Grown Farm Incubator"
          }
        }
      ]
