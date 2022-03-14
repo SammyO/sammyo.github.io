@@ -79,6 +79,10 @@ var options = {
                el.className = 'marker';
                /* Set the feature's image property as the custom marker image */
                el.style.backgroundImage=`url('${marker.properties.projectmarker}')`;
+               
+               /* Assign the `markerimage to marker */
+               document.getElementById("el").appendChild(markerimage);
+               markerimage.src = `url('${marker.properties.projectmarker}')`;
 
                /**
                * Create a marker using the div element
