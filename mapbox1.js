@@ -77,8 +77,7 @@ var options = {
                el.id = `marker-${marker.properties.id}`;
                /* Assign the `marker` class to each marker for styling. */
                el.className = 'marker';
-               /* Set the feature's image property as the custom marker image */
-               el.style.backgroundImage=`url('${marker.properties.projectmarker}')`;
+
                
                /* Assign the `markerimage to marker */
                document.getElementById("el").appendChild(markerimage);
