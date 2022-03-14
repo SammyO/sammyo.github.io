@@ -65,7 +65,6 @@ var options = {
      'data': stores
      });
      addMarkers();
-     buildLocationList(stores);
    });
 
      function addMarkers() {
