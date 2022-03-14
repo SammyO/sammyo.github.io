@@ -19,6 +19,71 @@ var options = {
    const stores = {
      "type": "FeatureCollection",
      "features": [
+          {
+         "type": "Feature",
+         "geometry": {
+           "type": "Point",
+           "coordinates": [
+             92.861524, 26.339692
+             
+           ]
+         },
+         "properties": {
+           "projectlink": "www.sumting.org/product/bamboo-for-forest-restoration",
+           "projectimage": "",
+           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caf21ff0e4473d258b7870_Capa%201-2.png",
+           "projectname":"Bamboo for forest Restoration"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+           "type": "Point",
+           "coordinates": [
+             -4.85807,
+             55.80736
+             
+           ]
+         },
+         "properties": {
+           "projectlink": "https://www.sumting.org/product/plant-a-tree-in-the-uk",
+           "projectimage": "",
+           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
+           "projectname":"Planting trees on the Brisbane Mains"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+           "type": "Point",
+           "coordinates": [
+             -4.649508,
+             57.850405
+             
+           ]
+         },
+         "properties": {
+           "projectlink": "https://www.sumting.org/product/restoring-aspen",
+           "projectimage": "https://uploads-ssl.webflow.com/61bb086531e81a34127b71cf/6225ec401c6abe8441bdea8b_94f1dea7-2e11-4782-acdf-bbc44680ab8e_Beaver-2.jpg",
+           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
+           "projectname":"Restoring Aspen"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+           "type": "Point",
+           "coordinates": [
+             39.367823,-4.714428
+           ]
+         },
+         "properties": {
+           "projectlink": "https://www.sumting.org/product/reefmodule-for-growing-biodiversity",
+           "projectimage": "",
+           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef990cb36b1397e3f070_Frame-6.png",
+           "projectname":"Reefsystems"
+         }
+       }
        {
          "type": "Feature",
          "geometry": {
@@ -34,22 +99,6 @@ var options = {
            "projectimage": "https://d354cgj0llpu6u.cloudfront.net/roberto-sorin-RS0-h_pyByk-unsplash.jpg",
            "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef956c8c4afb9f5b0825_Group%20141-2.png",
            "projectname":"Sumting Club"
-         }
-       },
-       {
-         "type": "Feature",
-         "geometry": {
-           "type": "Point",
-           "coordinates": [
-             -4.649508,
-             57.850405
-           ]
-         },
-         "properties": {
-          "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
-          "projectimage": "https://innovationorigins.com/app/uploads/2021/03/2020Blokkendam-304-2048x1367.jpg",
-          "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
-          "projectname":"Restoring Aspen"
          }
        }
      ]
