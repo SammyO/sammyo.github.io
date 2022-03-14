@@ -41,11 +41,11 @@
       font: 400 17px/24px 'Alatsi', 'Inter', sans-serif;
       padding: 0;
       width: auto;
-      background-color:#fdeae2;
+      background:#fdeae2;
     }
-.mapboxgl-popup-anchor-bottom{
- background-color: #fdeae2}
-
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
+ border-top-color:#fdeae2;}
+ 
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
  padding-top:11px;}
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
