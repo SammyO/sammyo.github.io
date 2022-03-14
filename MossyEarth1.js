@@ -32,7 +32,7 @@ var options = {
          "properties": {
            "projectlink": "https://www.sumting.org/product/restoring-aspen",
            "projectimage": "https://uploads-ssl.webflow.com/61bb086531e81a34127b71cf/6225ec401c6abe8441bdea8b_94f1dea7-2e11-4782-acdf-bbc44680ab8e_Beaver-2.jpg",
-           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
+           "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
            "projectname":"Restoring Aspen"
          }
        }
@@ -49,7 +49,6 @@ var options = {
      'data': stores
      });
      addMarkers();
-     buildLocationList(stores);
    });
 
      function addMarkers() {
