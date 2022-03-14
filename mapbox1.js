@@ -31,7 +31,7 @@ var options = {
          "properties": {
            "projectlink": "www.sumting.org/product/bamboo-for-forest-restoration",
            "projectimage": "",
-           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caf21ff0e4473d258b7870_Capa%201-2.png",
+           "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caf21ff0e4473d258b7870_Capa%201-2.png",
            "projectname":"Bamboo for forest Restoration"
          }
        },
@@ -48,7 +48,7 @@ var options = {
          "properties": {
            "projectlink": "https://www.sumting.org/product/plant-a-tree-in-the-uk",
            "projectimage": "",
-           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
+           "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
            "projectname":"Planting trees on the Brisbane Mains"
          }
        },
@@ -65,7 +65,7 @@ var options = {
          "properties": {
            "projectlink": "https://www.sumting.org/product/restoring-aspen",
            "projectimage": "https://uploads-ssl.webflow.com/61bb086531e81a34127b71cf/6225ec401c6abe8441bdea8b_94f1dea7-2e11-4782-acdf-bbc44680ab8e_Beaver-2.jpg",
-           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
+           "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
            "projectname":"Restoring Aspen"
          }
        },
@@ -80,7 +80,7 @@ var options = {
          "properties": {
            "projectlink": "https://www.sumting.org/product/reefmodule-for-growing-biodiversity",
            "projectimage": "",
-           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef990cb36b1397e3f070_Frame-6.png",
+           "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef990cb36b1397e3f070_Frame-6.png",
            "projectname":"Reefsystems"
          }
        },
