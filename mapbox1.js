@@ -32,7 +32,7 @@ var options = {
          "properties": {
            "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
            "projectimage": "https://d354cgj0llpu6u.cloudfront.net/roberto-sorin-RS0-h_pyByk-unsplash.jpg",
-           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef956c8c4afb9f5b0825_Group%20141-2.png",
+           "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef956c8c4afb9f5b0825_Group%20141-2.png",
            "projectname":"Sumting Club"
          }
        },
@@ -48,7 +48,7 @@ var options = {
          "properties": {
           "projectlink": "https://sumting-give-back-to-earth.webflow.io/product/mixed-portfolio",
           "projectimage": "https://innovationorigins.com/app/uploads/2021/03/2020Blokkendam-304-2048x1367.jpg",
-          "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
+          "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
           "projectname":"Restoring Aspen"
          }
        }
