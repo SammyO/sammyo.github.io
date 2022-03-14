@@ -22,6 +22,7 @@
    .custom-popup-image {
      width: 225px;
      height: 100px;
+     object-fit: cover;
    }
    
    .mapboxgl-popup {
