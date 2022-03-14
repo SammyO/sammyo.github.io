@@ -62,7 +62,7 @@ var options = {
                /* Assign the `marker` class to each marker for styling. */
                el.className = 'marker';
 
-               el.src = marker.properties.marker;
+               el.src = marker.properties.projectmarker;
 
                /**
                * Create a marker using the div element
