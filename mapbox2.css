@@ -15,8 +15,9 @@
       display: block;
       border-radius: 100%;
       border: 5px solid #fff;
-      height: 30px;
-      width: 30px;
+      background: #fff;
+      height: 35px;
+      width: 35px;
    }
 
    .custom-popup-image {
