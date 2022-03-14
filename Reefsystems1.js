@@ -30,7 +30,7 @@ var options = {
          "properties": {
            "projectlink": "https://www.sumting.org/product/reefmodule-for-growing-biodiversity",
            "projectimage": "",
-           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef990cb36b1397e3f070_Frame-6.png",
+           "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef990cb36b1397e3f070_Frame-6.png",
            "projectname":"Reefsystems"
          }
        }
@@ -47,7 +47,6 @@ var options = {
      'data': stores
      });
      addMarkers();
-     buildLocationList(stores);
    });
 
      function addMarkers() {
