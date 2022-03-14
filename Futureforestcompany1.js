@@ -32,7 +32,7 @@ var options = {
          "properties": {
            "projectlink": "https://www.sumting.org/product/plant-a-tree-in-the-uk",
            "projectimage": "",
-           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
+           "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef99f16cb018a1ae4529_Group.png",
            "projectname":"Planting trees on the Brisbane Mains"
          }
        }
