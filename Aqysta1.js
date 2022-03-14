@@ -31,7 +31,7 @@ var options = {
          "properties": {
            "projectlink": "https://www.sumting.org/product/the-grown-farm-incubator",
            "projectimage": "https://uploads-ssl.webflow.com/61bb086531e81a34127b71cf/622873453bdd0ff89a74ee24_Main%20Aqysta.png",
-           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caf21ff0e4473d258b7870_Capa%201-2.png",
+           "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caf21ff0e4473d258b7870_Capa%201-2.png",
            "projectname":"The Grown Farm Incubator"
          }
        }
@@ -48,7 +48,6 @@ var options = {
      'data': stores
      });
      addMarkers();
-     buildLocationList(stores);
    });
 
      function addMarkers() {
