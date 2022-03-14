@@ -83,7 +83,7 @@ var options = {
            "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caef990cb36b1397e3f070_Frame-6.png",
            "projectname":"Reefsystems"
          }
-       }
+       },
        {
          "type": "Feature",
          "geometry": {
