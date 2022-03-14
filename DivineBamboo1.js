@@ -31,7 +31,7 @@ var options = {
          "properties": {
            "projectlink": "www.sumting.org/product/bamboo-for-forest-restoration",
            "projectimage": "",
-           "projectmarker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caf21ff0e4473d258b7870_Capa%201-2.png",
+           "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caf21ff0e4473d258b7870_Capa%201-2.png",
            "projectname":"Bamboo for forest Restoration"
          }
        }
@@ -48,7 +48,6 @@ var options = {
      'data': stores
      });
      addMarkers();
-     buildLocationList(stores);
    });
 
      function addMarkers() {
