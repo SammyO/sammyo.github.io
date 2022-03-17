@@ -45,9 +45,9 @@
       width: auto;
       background:#fdeae2;
     }
+     
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
- border-top-color:#fdeae2;}
- 
+ border-top-color:#fdeae2;} 
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
  padding-top:11px;}
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
