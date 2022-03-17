@@ -60,9 +60,8 @@ var options = {
                el.id = `marker-${marker.properties.id}`;
                /* Assign the `marker` class to each marker for styling. */
                el.className = 'marker';
-
+               /* Assign the marker URL */
                el.src = marker.properties.marker;
-
 
                /**
                * Create a marker using the div element
