@@ -166,6 +166,7 @@ var options = {
        zoom: 13
      });
    }
+     // Empty commit
 
    function createPopUp(currentFeature) {
      const popUps = document.getElementsByClassName('mapboxgl-popup');
