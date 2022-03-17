@@ -30,7 +30,7 @@ var options = {
          },
          "properties": {
            "projectlink": "https://www.sumting.org/product/large-scale-ecological-resotration",
-           "projectimage": "https://uploads-ssl.webflow.com/61bb086531e81a34127b71cf/622873453bdd0ff89a74ee24_Main%20Aqysta.png",
+           "projectimage": "https://uploads-ssl.webflow.com/61bb086531e81a34127b71cf/62320841dc0af2bcc93f79eb_4.%20Main%20image.jpg",
            "marker": "https://uploads-ssl.webflow.com/61b75f7704ba6b6a2966c019/61caf21ff0e4473d258b7870_Capa%201-2.png",
            "projectname":"Large Scale Ecological Resotration"
          }
