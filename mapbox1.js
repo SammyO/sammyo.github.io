@@ -173,7 +173,7 @@ var options = {
      /** Check if there is already a popup on the map and if so, remove it */
      if (popUps[0]) popUps[0].remove();
 
-     const popup = new mapboxgl.Popup({ closeOnClick: false })
+     const popup = new mapboxgl.Popup({ closeOnClick: true })
   
      popup.setLngLat(currentFeature.geometry.coordinates)
        .setHTML(`
