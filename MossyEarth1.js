@@ -54,8 +54,8 @@ var options = {
      function addMarkers() {
           /* For each feature in the GeoJSON object above: */
           for (const marker of stores.features) {
-               /* Create a div element for the marker. */
-                              const el = document.createElement('img');
+               /* Create an img element for the marker. */
+               const el = document.createElement('img');
                /* Assign a unique `id` to the marker. */
                el.id = `marker-${marker.properties.id}`;
                /* Assign the `marker` class to each marker for styling. */
