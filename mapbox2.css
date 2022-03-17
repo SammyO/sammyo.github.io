@@ -14,10 +14,10 @@
    .marker {
       display: block;
       border-radius: 100%;
-      border: 2px solid #fff;
+      border: 1.5px solid #fff;
       background: #fff;
-      height: 2%;
-      width: 2%;
+      height: 25px;
+      width: 25px;
       margin-top:20px;
    }
 
