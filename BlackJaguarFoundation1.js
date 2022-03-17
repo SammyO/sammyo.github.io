@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtbXlvc3VtdGluZyIsImEiOiJja3llbHd2c2YwdDNuM
      const map = new mapboxgl.Map({
        container: 'map',
        style: 'mapbox://styles/sumting/ckzgwchr2000116lcvusqd79j',
-       center: [9.3215,50.2290],
+       center: [-9.3215,-50.2290],
        zoom: 8,
        scrollZoom: false,
        attributionControl: false
@@ -24,7 +24,7 @@ var options = {
          "geometry": {
            "type": "Point",
            "coordinates": [
-             9.3215,50.2290
+             -9.3215,-50.2290
              
            ]
          },
